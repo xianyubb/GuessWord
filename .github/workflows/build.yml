@@ -22,9 +22,9 @@ jobs:
           cp package.json dist/
       - name: pack plugin
         run: |
-          cd dist && 7z a -tzip -r BetterFakePlayer.llplugin .
+          cd dist && 7z a -tzip -r GuessWord.llplugin .
       - name: upload
         uses: actions/upload-artifact@v2
         with:
           name: BetterFakePlayer
-          path: dist/BetterFakePlayer.llplugin
+          path: dist/GuessWord.llplugin
